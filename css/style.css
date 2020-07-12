@@ -15,6 +15,10 @@ a {
   /*transition - це плавний перехід кольору кнопки*/
   transition: 0.3s ease-out;
 }
+
+* {
+  box-sizing: border-box;
+}
 /******************************************
                     GRID
 ******************************************/
@@ -192,4 +196,30 @@ p.footer-name {
 .button:hover {
   color: #061634;
   background-color: #fff;
+}
+
+
+/***********************************************
+            MEDIA
+*************************************************/
+/*При ширині екран в 1140 пікселів і нижче
+буде виконуватись браузером медіа запит*****/
+@media (max-width: 1160px) {
+
+  .container {
+    /*контейнер підлаштовується під ширину екрану*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col {
+    width: 100%;
+    margin:0;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
+
 }
